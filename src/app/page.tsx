@@ -3,8 +3,9 @@ import { SignInButton, SignUpButton, UserButton } from "@clerk/nextjs"
 import { auth } from "@clerk/nextjs/server"
 import { redirect } from "next/navigation"
 
-export default function HomePage() {
-
+export default async function HomePage() {
+  const session = await auth(); // Espera a Promise resolver
+  if (session.userId) redirect("/events");
 
   return (
     <div className="text-center container my-4 mx-auto">
