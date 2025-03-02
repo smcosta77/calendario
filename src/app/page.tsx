@@ -18,7 +18,6 @@ export default async function HomePage() {
           <SignUpButton />
         </Button>
         <UserButton />
-        <p>Teste</p>
       </div>
     </div>
   )
