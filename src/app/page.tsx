@@ -11,10 +11,10 @@ export default async function HomePage() {
     <div className="text-center container my-4 mx-auto">
       <h1 className="text-3xl mb-4">Fancy Home Page</h1>
       <div className="flex gap-2 justify-center">
-        <Button asChild className="bg-blue-500">
+        <Button asChild className="bg-blue-600">
           <SignInButton />
         </Button>
-        <Button asChild className="bg-blue-500">
+        <Button asChild className="bg-blue-600">
           <SignUpButton />
         </Button>
         <UserButton />
